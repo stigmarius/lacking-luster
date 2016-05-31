@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html"; charset=ISO-8859-1"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Problemløseren</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+	</head>
+    <body>
+
+        <!-- Add your site or application content here -->
+		<div class="header">
+			<div class="container">
+				<a href="index.html" class="logo-icon">
+					<img src="https://telia.no/netcom-theme/images/logo/43px-telia-logo-animated-transparent.gif">
+				</a>
+				
+				<ul class="menu">
+					<li class="dropdown"><a href="#" class="dropdown-toggle" id="liAnrop" data-toggle="dropdown">Anrop</a>
+						<ul class="dropdown-menu" id="dd0">
+							<li><a href="#" id="da000">Innkommende</a></li>
+							<li><a href="#" id="da010">Utgående</a></li>
+							<li><a href="#" id="da020">Brudd/Ustabilt</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" id="liData" data-toggle="dropdown">Data</a>
+						<ul class="dropdown-menu" id="dd1">
+							<li><a href="#">Modem/Rutere</a></li>
+							<li><a href="#">Mobil</a></li>
+							<li><a href="#">E-post</a></li>
+							<li><a href="#">Telemetri</a></li>
+							<li><a href="#">Roaming</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="sms">SMS</a></li>
+					<li><a href="#" class="mms">MMS</a></li>
+					<li><a href="#" class="mbb">Mobilt Bredbånd</a></li>
+					<li><a href="#" class="dekning">Dekning</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" id="liMer" data-toggle="dropdown">Mer<span class="caret"></span></a>
+						<ul class="dropdown-menu" id="ddmer">
+							<li><a href="#">Portering</a></li>
+							<li><a href="#">Avdragsordning</a></li>
+							<li><a href="#">TrillingSIM</a></li>
+							<li><a href="#">Personsvar</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="active-prb"> <!-- Header for content -->
+			<div class="content">
+				<h1>Problemløseren</h1>
+			</div>
+		</div>
+		
+		<div class="slider" id="prob"> <!-- Hovedområdet hvor sidene skal åpnes -->		
+			<div class="content anrop" id="p0">
+				<div class="anrop-innkommende edit_area" id="a00">
+					<h2>Anrop</h2>
+					<h3>Innkommende</h3>
+					<div class="anrop-innkommende edit_area" id="a000">
+						<h4>Viderekobling</h4>
+						<p>Fjerne viderekoblinger på telefonen</p>
+						<ul class="editable_textarea" id="paragraph_1">
+							<li>Åpne nummeret i Fokus</li>
+							<li>Velg "Profile"</li>
+							<li>Velg "Page Options"</li>
+							<li>Velg "Special Call Forwarding"</li>
+							<li>Velg "Remove Call Forwarding Unconditional"</li>
+						</ul>
+						<p>Hvis dette ikke løste problemet, trykk "Neste"</p>
+					</div>
+					<div class="anrop-innkommende" id="a001">
+						<h4>SIM-kort</h4>
+						<p>Sjekk at kunden bruker riktig SIM.</p>
+						<ul>
+							<li>Be kunden ta ut SIM-kortet fra telefonen og lese opp SIM-nummeret</li>
+							<li>Sjekk at SIM-nummeret står registrert som aktivt</li>
+						</ul>
+						<p>Hvis dette ikke løste problemet, trykk "Neste"</p>
+					</div>
+					<div class="anrio innkommende" id="a002">
+						<h4>ODB-sperrer</h4>
+						<p>Kontroller at kundens abonnement er aktivt og ikke har noen ODB-sperrer</p>
+						<p>Hvis dette ikke løste problemet, trykk "Neste"</p>
+					</div>
+				</div>
+					
+				<div class="anrop-utgående" id="a01">
+					<h2>Anrop</h2>
+					<h3>Utgående</h3>
+					<div class="anrop-utgående" id="a010">
+						<h4>ODB-sperrer</h4>
+						<p>Kontroller om abonnementet har noen ODB-sperrer som forhindrer kunden i å ringe de ønskede nummerene</p>				
+					</div>
+					<div class="anrop-utgående" id="a011">
+						<h4>Test</h4>
+						<p>Dette er et test-avsnitt</p>
+					</div>
+				</div>
+				<div class="anrop-brudd" id="a02">
+					<h2>Anrop</h2>
+					<h3>Brudd/Ustabilt</h3>
+				</div>				
+			</div>
+			
+			<div class="content data" id="p1">
+				<h2>Problemer med data</h2>
+			</div>
+			
+			<div class="content sms" id="p2">
+				<h2>Problemer med SMS</h2>
+				<p>SMS-problemer kan være så mangt - har du forsøkt å skru telefonen av og på igjen?</p>
+			</div>
+		</div>
+		
+		<div class="slider-nav">
+			<a href="#" class="arrow-prev" id="arrow-prev"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png"></a>
+			<ul class="slider-dots" id="slDot">
+				<li class="dot active-dot" id="topDot">&bull;</li>
+				<li class="dot">&bull;</li>
+				<li class="dot">&bull;</li>
+				<li class="dot">&bull;</li>
+			</ul>
+			<a href="#" class="arrow-next" id="arrow-next"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png"></a>
+		</div> 
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="http://www.appelsiini.net/download/jquery.jeditable.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
